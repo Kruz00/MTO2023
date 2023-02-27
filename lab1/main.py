@@ -4,18 +4,17 @@ import sys
 
 def my_printf(format_string,param):
     #print(format_string)
-    shouldDo = True
-    string_var = ""
+    shouldDo=True
     for idx in range(0,len(format_string)):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                string_var = string_var + str(param)
+                print(param.swapcase(),end="")
                 shouldDo=False
             else:
-                string_var = string_var + str(format_string[idx])
+                print(format_string[idx].swapcase(),end="")
         else:
             shouldDo=True
-    print(string_var.swapcase())
+    print("")
 
 data=sys.stdin.readlines()
 
