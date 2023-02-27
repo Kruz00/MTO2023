@@ -1,4 +1,12 @@
 abc
 TEST1
-abc#k df
+abc #k
 TEST2
+abc #k hd
+TEST3
+abc #k hd #k
+TEST4
+abc #k #k
+TEST5
+abc#k
+TEST6
