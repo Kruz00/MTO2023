@@ -15,7 +15,7 @@ def my_printf(format_string,param):
                 string_var = string_var + str(format_string[idx])
         else:
             shouldDo=True
-    print(string_var)
+    print(string_var.swapcase())
 
 data=sys.stdin.readlines()
 
