@@ -10,3 +10,11 @@ abc #k #k
 TEST5
 abc#k
 TEST6
+abc#k#k
+TEST7
+abc#l
+TEST8
+abc#k#l
+TEST9
+#k aBcYY87
+TEST10
