@@ -6,8 +6,11 @@ import sys
 def my_printf(format_string, param):
     param = str(param)
     shouldDo = True
+    next_index = 0
     for idx in range(0, len(format_string)):
         is_printed = False
+        if next_index > idx:
+            continue
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx + 1] == 'k':
                 print(param.swapcase(), end="")
@@ -24,6 +27,7 @@ def my_printf(format_string, param):
                     break
                 str_len = int(format_string[idx + 2: end_id + 1])
                 print(param[:str_len].swapcase(), end="")
+                next_index = end_id + 1
                 shouldDo = False
                 is_printed = True
             if not is_printed:
@@ -34,9 +38,9 @@ def my_printf(format_string, param):
     print("")
 
 
-# data = sys.stdin.readlines()
-data = ["abc #.2k",
-        "TEST2"]
+data = sys.stdin.readlines()
+# data = ["abc #.8k",
+#         "TEST2"]
 
 for i in range(0, len(data), 2):
     my_printf(data[i].rstrip(), data[i + 1].rstrip())
