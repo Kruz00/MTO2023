@@ -14,7 +14,7 @@ def my_printf(format_string, param):
                 shouldDo = False
                 is_printed = True
             elif format_string[idx] == '#' and format_string[idx + 1] == '.' and format_string[idx + 2].isdigit():
-                end_id = idx + 3
+                end_id = idx + 2
                 while format_string[idx + 2: end_id].isdigit():
                     end_id += 1
                 end_id -= 1
