@@ -1,4 +1,8 @@
 abc
 TEST1
-abc #.2k
+abc #k
 TEST2
+abc #.2k
+TEST3
+abc #.12k
+TEST3789xxxxxxxxxxx
