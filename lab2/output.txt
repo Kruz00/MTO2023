@@ -1,4 +1,10 @@
 ABC
 ABC test2
 ABC te
-ABC test3789XXXX
+ABC test4789XXXX
+ABC #.SK
+ABC test6
+ABC test7 DFSSFDDS
+ABC #.K
+ABC 
+ABC t
