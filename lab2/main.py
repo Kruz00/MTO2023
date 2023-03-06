@@ -7,15 +7,26 @@ def my_printf(format_string, param):
     param = str(param)
     shouldDo = True
     for idx in range(0, len(format_string)):
+        is_printed = False
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx + 1] == 'k':
                 print(param.swapcase(), end="")
                 shouldDo = False
-            elif format_string[idx] == '#' and format_string[idx + 1] == '.':
-                print(param[:2].swapcase(), end="")
+                is_printed = True
+            elif format_string[idx] == '#' and format_string[idx + 1] == '.' and format_string[idx + 2].isdigit():
+                end_id = idx + 3
+                while format_string[idx + 2: end_id].isdigit():
+                    end_id += 1
+                end_id -= 1
+                if format_string[idx + end_id + 1] != 'k':
+                    break
+                str_len = int(format_string[idx + 2: end_id])
+                print(param[:str_len].swapcase(), end="")
                 shouldDo = False
-            else:
+                is_printed = True
+            if not is_printed:
                 print(format_string[idx].swapcase(), end="")
+                is_printed = True
         else:
             shouldDo = True
     print("")
