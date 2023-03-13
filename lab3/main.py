@@ -24,18 +24,17 @@ def my_printf(format_string, param):
         m_temp = re.search(r'\d+\.', m.group(0))
         if m_temp is not None:
             min_len = int(m_temp.group(0)[:-1])
-        print(max_len)
-        print(min_len)
         #
+
+        strreplace = strreplace[:max_len]
+
 
         strbefore += strafter[:m.span()[0]]
         strbefore += strreplace
         strafter = strafter[m.span()[1]:]
-        print("'" + strbefore + "'")
-        print("'" + strafter + "'")
         str_k = m.group(1)
-        print(str_k)
-        print("-------")
+
+    format_string = strbefore + strafter
 
     param = str(param)
     shouldDo = True
