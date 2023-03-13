@@ -13,7 +13,21 @@ def my_printf(format_string, param):
         if m is None:
             continue
 
-        strreplace = "###"
+        #
+        strreplace = param
+        max_len = len(strreplace)
+        min_len = len(strreplace)
+        m_temp = re.search(r'\.\d+', m.group(0))
+        if m_temp is not None:
+            max_len = int(m_temp.group(0)[1:])
+
+        m_temp = re.search(r'\d+\.', m.group(0))
+        if m_temp is not None:
+            min_len = int(m_temp.group(0)[:-1])
+        print(max_len)
+        print(min_len)
+        #
+
         strbefore += strafter[:m.span()[0]]
         strbefore += strreplace
         strafter = strafter[m.span()[1]:]
@@ -58,7 +72,7 @@ def my_printf(format_string, param):
 
 
 # data = sys.stdin.readlines()
-data = ["abc #7.3kjhdf#.10k",
+data = ["abc #7.3kjhdf#.10kkjdf df#7kdf",
         "TEST2"]
 
 for i in range(0, len(data), 2):
