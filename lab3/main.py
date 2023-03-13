@@ -6,10 +6,23 @@ import re
 
 def my_printf(format_string, param):
     m = ''
+    strbefore = ""
+    strafter = format_string
     while m is not None:
-        m = re.search('#(.+?)k', format_string)
-        print(m)
-        break
+        m = re.search('#(.+?)k', strafter)
+        if m is None:
+            continue
+
+        strreplace = "###"
+        strbefore += strafter[:m.span()[0]]
+        strbefore += strreplace
+        strafter = strafter[m.span()[1]:]
+        print("'" + strbefore + "'")
+        print("'" + strafter + "'")
+        str_k = m.group(1)
+        print(str_k)
+        print("-------")
+
     param = str(param)
     shouldDo = True
     next_index = 0
@@ -45,7 +58,7 @@ def my_printf(format_string, param):
 
 
 # data = sys.stdin.readlines()
-data = ["abc #7.3kjhdf#10.1k",
+data = ["abc #7.3kjhdf#.10k",
         "TEST2"]
 
 for i in range(0, len(data), 2):
