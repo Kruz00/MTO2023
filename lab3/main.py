@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
 import sys
+import re
 
 
 def my_printf(format_string, param):
+    m = ''
+    while m is not None:
+        m = re.search('#(.+?)k', format_string)
+        print(m)
+        break
     param = str(param)
     shouldDo = True
     next_index = 0
@@ -38,9 +44,9 @@ def my_printf(format_string, param):
     print("")
 
 
-data = sys.stdin.readlines()
-# data = ["abc #.8k",
-#         "TEST2"]
+# data = sys.stdin.readlines()
+data = ["abc #7.3kjhdf#10.1k",
+        "TEST2"]
 
 for i in range(0, len(data), 2):
     my_printf(data[i].rstrip(), data[i + 1].rstrip())
