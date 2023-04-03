@@ -1,0 +1,20 @@
+abc
+TEST1
+abc #k
+TEST2
+abc #.2k
+TEST3
+abc #.sk
+TEST4
+abc #.174k hehe
+TEST5
+abc #2.12k dfssfdds
+TEST6
+abc #.k
+TEST7
+abc #10.2k
+TEST8
+abc #1.1k
+TEST9
+abc #0.4k
+TEST10
