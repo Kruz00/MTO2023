@@ -31,7 +31,7 @@ class lab5 {
 
 			try {
 				if ((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == 'g')) {
-					outstr.append(param);
+					outstr.append(everyDigitMinusOne(param));
 					i++;
 					toAppend = false;
 				}
@@ -54,7 +54,7 @@ class lab5 {
 					if (format_string.charAt(i + charToSkip + 1) == 'g') {
 						charToSkip++;
 						paramReformatted = String.format("%" + minParamLen + "s", param);
-						outstr.append(paramReformatted);
+						outstr.append(everyDigitMinusOne(paramReformatted));
 						i += charToSkip;
 						toAppend = false;
 					}
@@ -68,24 +68,10 @@ class lab5 {
 			}
 
         }
-        System.out.println(swapCase(outstr.toString()));
+        System.out.println(outstr.toString());
     }
 
-	public static String swapCase(String strIn) {
-		char[] chars = strIn.toCharArray();
-		for (int i = 0; i < chars.length; i++)
-		{
-			char c = chars[i];
-			if (Character.isUpperCase(c))
-			{
-				chars[i] = Character.toLowerCase(c);
-			}
-			else if (Character.isLowerCase(c))
-			{
-				chars[i] = Character.toUpperCase(c);
-			}
-		}
-		return new String(chars);
-	}
+	public static String everyDigitMinusOne(String number) {
 
+	}
 }
