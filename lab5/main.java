@@ -72,6 +72,6 @@ class lab5 {
     }
 
 	public static String everyDigitMinusOne(String number) {
-
+		return number;
 	}
 }
