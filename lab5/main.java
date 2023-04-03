@@ -11,7 +11,7 @@ class lab5 {
 		if (!bufferReader.ready()) {
 			my_printf(
 					"test#8ghh123",
-					"4567"
+					"1204"
 			);
 
 		}
@@ -72,6 +72,17 @@ class lab5 {
     }
 
 	public static String everyDigitMinusOne(String number) {
-		return number;
+		StringBuilder outStr = new StringBuilder();
+		for (char c : number.toCharArray()) {
+			if(Character.isDigit(c)) {
+				if (c == '0') {
+					c = '9';
+				} else {
+					c = (char) (c - 1);
+				}
+			}
+			outStr.append(c);
+		}
+		return outStr.toString();
 	}
 }
