@@ -14,3 +14,5 @@ TEST7 #.10g abc
 1234567894334
 TEST8 #.10g abc
 123
+TEST9 #.0g abc
+1234
