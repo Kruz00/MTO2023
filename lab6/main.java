@@ -10,8 +10,8 @@ class lab6 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"test#8ghh123",
-					"1204"
+					"test#.6ghh123",
+					"4378"
 			);
 
 		}
@@ -31,30 +31,33 @@ class lab6 {
 
 			try {
 				if ((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == 'g')) {
-					outstr.append(everyDigitMinusOne(param));
+					outstr.append(modifyEveryDigit(param));
 					i++;
 					toAppend = false;
 				}
 				//////////////////////////////////////////
-				if (toAppend && (format_string.charAt(i) == '#') && (Character.isDigit(format_string.charAt(i + 1)))) {
+				if (toAppend && (format_string.charAt(i) == '#')
+						&& format_string.charAt(i + 1) == '.' && Character.isDigit(format_string.charAt(i + 2))
+				) {
 					String paramReformatted;
 					int charToSkip = 0;
-					Integer minParamLen = null;
+					Integer maxParamLen = null;
 
-					if (Character.isDigit(format_string.charAt(i + charToSkip + 1))) {
+					if (format_string.charAt(i + charToSkip + 1) == '.') {
+						charToSkip++;
 						int numLen = 1;
 						while (Character.isDigit(format_string.charAt(i + charToSkip + numLen))) {
 							numLen++;
 						}
 						numLen--;
-						minParamLen = Integer.parseInt(format_string.substring(i + charToSkip + 1, i + charToSkip + numLen + 1));
+						maxParamLen = Integer.parseInt(format_string.substring(i + charToSkip + 1, i + charToSkip + numLen + 1));
 						charToSkip += numLen;
 					}
 
 					if (format_string.charAt(i + charToSkip + 1) == 'g') {
 						charToSkip++;
-						paramReformatted = String.format("%" + minParamLen + "s", param);
-						outstr.append(everyDigitMinusOne(paramReformatted));
+						paramReformatted = String.format("%" + "." + maxParamLen + "s", param);
+						outstr.append(modifyEveryDigit(paramReformatted));
 						i += charToSkip;
 						toAppend = false;
 					}
@@ -71,15 +74,12 @@ class lab6 {
         System.out.println(outstr.toString());
     }
 
-	public static String everyDigitMinusOne(String number) {
+	public static String modifyEveryDigit(String number) {
 		StringBuilder outStr = new StringBuilder();
 		for (char c : number.toCharArray()) {
 			if(Character.isDigit(c)) {
-				if (c == '0') {
-					c = '9';
-				} else {
-					c = (char) (c - 1);
-				}
+				int cyfra = (int)c - '0';
+				c = (char) (((cyfra * 9 + 1) % 10) + '0');
 			}
 			outStr.append(c);
 		}
