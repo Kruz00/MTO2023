@@ -6,3 +6,7 @@ TEST2 #g
 561
 TEST4#gabc
 561
+TEST5 #.g abc
+561
+TEST6 #.5g abc
+123456789
