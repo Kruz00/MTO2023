@@ -11,7 +11,7 @@ class lab6 {
 		if (!bufferReader.ready()) {
 			my_printf(
 					"test#.6ghh123",
-					"4378"
+					"4378784635"
 			);
 
 		}
