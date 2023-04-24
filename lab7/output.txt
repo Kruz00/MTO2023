@@ -9,3 +9,4 @@ TEST8 10
 TEST9 10l
 TEST10 jkgjhkkl
 TEST11 -ghAA
+TEST12 -1l
