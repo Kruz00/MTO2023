@@ -9,12 +9,12 @@ def my_printf(format_string, param):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx + 1] == 'j':
                 number = int(param)
-                out_str = '{:x}'.format(number)\
-                    .replace("a", "g")\
-                    .replace("b", "h")\
-                    .replace("c", "i")\
-                    .replace("d", "j")\
-                    .replace("e", "k")\
+                out_str = '{:x}'.format(number) \
+                    .replace("a", "g") \
+                    .replace("b", "h") \
+                    .replace("c", "i") \
+                    .replace("d", "j") \
+                    .replace("e", "k") \
                     .replace("f", "l")
                 print(out_str, end="")
                 shouldDo = False
