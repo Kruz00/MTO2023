@@ -15,7 +15,8 @@ def my_printf(format_string, param):
                     .replace("c", "i") \
                     .replace("d", "j") \
                     .replace("e", "k") \
-                    .replace("f", "l")
+                    .replace("f", "l")\
+                    .replace("0", "o")
                 print(out_str, end="")
                 shouldDo = False
             else:
