@@ -1,10 +1,12 @@
-totafsdfsf test fdsfsdf
-totafsdtes fdsfsdf fdfjs
-jfldjfldk # wynik
-fjdfsfds # k alal
-djfjkldsjf o jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds s jdlkfjdslf
-fjdslkfjdl 7 tttttt
-fjdlsjfkl 8 oooolll
-rwrewrew 9 fjdslkjfdl
-fjdlskjfldjflj 0 rewrewrew
+TEST1
+TEST2 g
+hTEST3
+TEST4iabc
+TEST5 ghijklo
+TEST6 k
+TEST7 783423
+TEST8 oooo231515
+TEST9 271135
+TEST10 39o178
+TEST11 llllll55AA
+TEST12 ooooooooooo18o15oooo
