@@ -75,14 +75,13 @@ class lab8 {
     }
 
 	public static String modifyOutNumber(String number) {
-		StringBuilder outStr = new StringBuilder();
-		for (char c : number.toCharArray()) {
-			if(Character.isDigit(c)) {
-				int cyfra = (int)c - '0';
-				c = (char) (((cyfra * 9 + 1) % 10) + '0');
-			}
-			outStr.append(c);
-		}
-		return outStr.toString();
+		return number
+				.replaceAll("a", "g")
+				.replaceAll("b", "h")
+				.replaceAll("c", "i")
+				.replaceAll("d", "j")
+				.replaceAll("e", "k")
+				.replaceAll("f", "l")
+				.replaceAll("0", "o");
 	}
 }
