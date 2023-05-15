@@ -4,9 +4,8 @@ hTEST3
 TEST4iabc
 TEST5 ghijklo
 TEST6 k
-TEST7 l
-TEST8 1o
-TEST9 1ol
+TEST7 #.1j
+TEST8 #.10j
+TEST9 #.4j
 TEST10 39o178
 TEST11 llllll55AA
-TEST12 llllllk1

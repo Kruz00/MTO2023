@@ -10,8 +10,8 @@ class lab8 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"TEST10 #j",
-					"-171"
+					"TEST9 #.10j",
+					"231515"
 			);
 
 		}
@@ -56,7 +56,9 @@ class lab8 {
 
 					if (format_string.charAt(i + charToSkip + 1) == 'j') {
 						charToSkip++;
-						paramReformatted = String.format("%" + "." + maxParamLen + "x", Integer.parseInt(param));
+						paramReformatted = String.format("%x", Integer.parseInt(param));
+						paramReformatted = String.format("%" + maxParamLen + "s", Integer.parseInt(param));
+						paramReformatted = paramReformatted.replaceAll(" ", "0");
 						outstr.append(modifyOutNumber(paramReformatted));
 						i += charToSkip;
 						toAppend = false;
