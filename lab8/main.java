@@ -10,8 +10,8 @@ class lab8 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"test#.6ghh123",
-					"4378784635"
+					"TEST10 #j",
+					"-171"
 			);
 
 		}
