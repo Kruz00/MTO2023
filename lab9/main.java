@@ -10,8 +10,8 @@ class lab9 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"TEST9 #.10j",
-					"231515"
+					"TEST9 #.1h",
+					"2315"
 			);
 
 		}
@@ -30,8 +30,8 @@ class lab9 {
 			toAppend = true;
 
 			try {
-				if ((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == 'j')) {
-					outstr.append(modifyOutNumber(String.format("%x", Integer.parseInt(param))));
+				if ((format_string.charAt(i) == '#') && (format_string.charAt(i + 1) == 'h')) {
+					outstr.append(modifyOutNumber(String.format("%f", Float.parseFloat(param))));
 					i++;
 					toAppend = false;
 				}
@@ -54,11 +54,9 @@ class lab9 {
 						charToSkip += numLen;
 					}
 
-					if (format_string.charAt(i + charToSkip + 1) == 'j') {
+					if (format_string.charAt(i + charToSkip + 1) == 'h') {
 						charToSkip++;
-						paramReformatted = String.format("%x", Integer.parseInt(param));
-						paramReformatted = String.format("%" + maxParamLen + "s", Integer.parseInt(param));
-						paramReformatted = paramReformatted.replaceAll(" ", "0");
+						paramReformatted = String.format("%" + "." + maxParamLen + "f", Float.parseFloat(param));
 						outstr.append(modifyOutNumber(paramReformatted));
 						i += charToSkip;
 						toAppend = false;
@@ -78,12 +76,7 @@ class lab9 {
 
 	public static String modifyOutNumber(String number) {
 		return number
-				.replaceAll("a", "g")
-				.replaceAll("b", "h")
-				.replaceAll("c", "i")
-				.replaceAll("d", "j")
-				.replaceAll("e", "k")
-				.replaceAll("f", "l")
-				.replaceAll("0", "o");
+				.replaceAll(",", ".");
+
 	}
 }
