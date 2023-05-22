@@ -1,2 +1,7 @@
 TEST1
-TEST2 # j
+TEST2 # h
+TEST3 #h
+TEST4 #.h
+TEST5 #..h
+TEST6 #ah
+TEST7 #${2+1}h
