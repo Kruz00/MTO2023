@@ -1,24 +1,82 @@
+totafsdfsf # fdsfsdf
+12.324
+totafsd# fdsfsdf fdfjs
+12.324
+jfldjfldk # wynik
+12.324
+fjdfsfds # j alal
+12.324
+djfjkldsjf jjjjjj fsfjdljfdlsj flj ldfj
+12.324
+gjjkdsljflds jdlkfjdslf
+12.324
+fjdslkfjdl tt#ktttt
+12.324
+fjdlsjfkl oooolll
+12.324
+rwrewrew fj#.3bslkjfdl
+12.324
+fjdlskjfldjflj rewrewrew
+12.324
+TEST1 #.2h
+7.0
+TEST2 #.0h
+10.0
+#hTEST3
+11.0
+TEST4#habc
+12.0
+TEST5 #h
+180150000.0
+TEST6 #h
+14.0
+TEST7 #.1h
+783423.0
+TEST8 #.10h
+231515.0
+TEST9 #.4h
+0271135.0
+TEST10 #h
+3735928.0
+TEST11 #hAA
+-171.0
+TEST12 #.20h
+180150000.0
+TEST1 #.2h
+7.1
+TEST2 #.15h
+10.2
+#hTEST3
+11.3
+TEST4#habc
+12.4
+TEST5 #h
+180150000.5
+TEST6 #h
+14.6
+TEST7 #.1h
+783423.7
+TEST8 #.10h
+231515.8
+TEST9 #.4h
+0271135.9
+TEST10 #h
+3735928.001
+TEST11 #hAA
+-171.00001
+TEST12 #.0h
+180150000.23
 TEST1
-7
-TEST2 #j
-10
-#jTEST3
-11
-TEST4#jabc
-12
-TEST5 #j
-180150000
-TEST6 #j
-14
-TEST7 #.1j
-783423
-TEST8 #.10j
-231515
-TEST9 #.4j
-0271135
-TEST10 #j
-3735928
-TEST11 #jAA
--171
-TEST12 #.20j
-180150000
+7.3
+TEST2 # h
+10.43
+TEST3 #h
+fgef
+TEST4 #.h
+10.43
+TEST5 #..h
+10.43
+TEST6 #ah
+10.43
+TEST7 #${2+1}h
+10.43
