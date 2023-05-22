@@ -11,7 +11,7 @@ class lab9 {
 		if (!bufferReader.ready()) {
 			my_printf(
 					"TEST9 #.1h",
-					"2315"
+					"2315.76"
 			);
 
 		}
@@ -75,8 +75,27 @@ class lab9 {
     }
 
 	public static String modifyOutNumber(String number) {
-		return number
-				.replaceAll(",", ".");
+		String[] strings = number.split(",");
+		String newNumber = strings[0];
+		newNumber = newNumber
+				.replaceAll("0", "a")
+				.replaceAll("1", "b")
+				.replaceAll("2", "c")
+				.replaceAll("3", "d")
+				.replaceAll("4", "e")
+				.replaceAll("5", "f")
+				.replaceAll("6", "g")
+				.replaceAll("7", "h")
+				.replaceAll("8", "i")
+				.replaceAll("9", "j");
+
+		if(strings.length == 2) {
+			int after = Integer.parseInt(strings[1]);
+			after = (after+5)%10;
+			newNumber = newNumber + "." + after;
+		}
+
+		return newNumber;
 
 	}
 }
