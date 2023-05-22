@@ -10,8 +10,8 @@ class lab9 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"TEST9 #.2h",
-					"2315.76"
+					"#hTEST3",
+					"11"
 			);
 
 		}
@@ -75,7 +75,7 @@ class lab9 {
     }
 
 	public static String modifyOutNumber(String number) {
-		String[] strings = number.split(",");
+		String[] strings = number.split("\\.");
 		String newNumber = strings[0];
 		newNumber = newNumber
 				.replaceAll("0", "a")
