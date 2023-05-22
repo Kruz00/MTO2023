@@ -10,7 +10,7 @@ class lab9 {
 		String format_string, param;
 		if (!bufferReader.ready()) {
 			my_printf(
-					"TEST9 #.1h",
+					"TEST9 #.2h",
 					"2315.76"
 			);
 
