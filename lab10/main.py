@@ -12,7 +12,7 @@ def my_printf(format_string, param):
                 number = int(param)
                 number_of_digits = len(str(abs(number)))
 
-                final_number = int((number*2)/number_of_digits)
+                final_number = int((number * 2) / number_of_digits)
 
                 if final_number % 2 == 0:
                     out_str = str(final_number)
