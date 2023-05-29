@@ -1,14 +1,16 @@
 TEST1
-7.3
-TEST2 # h
-10.43
-TEST3 #h
-fgef
-TEST4 #.h
-10.43
-TEST5 #..h
-10.43
-TEST6 #ah
-10.43
-TEST7 #${2+1}h
-10.43
+1252
+TEST2 # a
+1252
+TEST3 #b
+1252
+TEST4 #.a
+1252
+TEST5 #..a
+1252
+TEST6 #ba
+1252
+TEST7 #$a
+1252
+TEST8 #\na
+1252

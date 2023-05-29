@@ -1,0 +1,12 @@
+TEST1 #.2h
+TEST2 #.15h
+#hTEST3
+TEST4#habc
+TEST5 #h
+TEST6 #h
+TEST7 #.1h
+TEST8 #.10h
+TEST9 #.4h
+TEST10 #h
+TEST11 #hAA
+TEST12 #.0h
