@@ -14,7 +14,7 @@ def my_printf(format_string, param):
 
                 final_number = int((number*2)/number_of_digits)
 
-                if number % 2 == 0:
+                if final_number % 2 == 0:
                     out_str = str(final_number)
                 else:
                     out_str = '{:x}'.format(number)
@@ -28,9 +28,9 @@ def my_printf(format_string, param):
     print("")
 
 
-data = sys.stdin.readlines()
-# data = ["abc #j",
-#         "10"]
+# data = sys.stdin.readlines()
+data = ["abc #a",
+        "16"]
 
 for i in range(0, len(data), 2):
     my_printf(data[i].rstrip(), data[i + 1].rstrip())
