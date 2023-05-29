@@ -3,4 +3,5 @@ TEST2 # h
 TEST3 #h
 TEST4 #.h
 TEST5 #..h
-TEST6 
+TEST6 #ah
+TEST7 #${2+1}h
