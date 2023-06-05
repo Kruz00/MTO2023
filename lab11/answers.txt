@@ -58,3 +58,4 @@ TEST6 #ab
 TEST7 #$b
 TEST8 #\nb
 #\0b TEST9
+TEST10 #${'b'}
