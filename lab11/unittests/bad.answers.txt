@@ -1,8 +1,9 @@
 TEST1
-TEST2 # a
-TEST3 #b
-TEST4 #.a
-TEST5 #..a
-TEST6 #ba
-TEST7 #$a
-TEST8 #\na
+TEST2 # b
+TEST3 #a
+TEST4 #.b
+TEST5 #..b
+TEST6 #ab
+TEST7 #$b
+TEST8 #\nb
+#\0b TEST9

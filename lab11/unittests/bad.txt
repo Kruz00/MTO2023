@@ -1,16 +1,18 @@
 TEST1
 1252
-TEST2 # a
+TEST2 # b
 1252
-TEST3 #b
+TEST3 #a
 1252
-TEST4 #.a
+TEST4 #.b
 1252
-TEST5 #..a
+TEST5 #..b
 1252
-TEST6 #ba
+TEST6 #ab
 1252
-TEST7 #$a
+TEST7 #$b
 1252
-TEST8 #\na
+TEST8 #\nb
+1252
+#\0b TEST9
 1252

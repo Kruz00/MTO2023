@@ -28,9 +28,9 @@ def my_printf(format_string, param):
     print(out)
 
 
-# data = sys.stdin.readlines()
-data = ["abc #b",
-        "123"]
+data = sys.stdin.readlines()
+# data = ["abc #b",
+#         "123"]
 
 for i in range(0, len(data), 2):
     my_printf(data[i].rstrip(), data[i + 1].rstrip())
