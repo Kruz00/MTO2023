@@ -1,0 +1,20 @@
+TEST1 #a
+-1000
+TEST2 #a
+-999
+TEST3 #a
+-997
+TEST4 #a
+-996
+TEST5 #a
+-994
+TEST6 #a
+-993
+TEST7 #a
+-991
+TEST8 #a
+-990
+TEST9 #a
+-988
+TEST10 #a
+-987

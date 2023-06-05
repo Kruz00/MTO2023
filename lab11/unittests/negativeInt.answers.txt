@@ -1,0 +1,10 @@
+TEST1 ajihgf0d000
+TEST2 ajihgf00cba
+TEST3 ajihgf00c0a
+TEST4 ajihgf00c00
+TEST5 ajihgf000b0
+TEST6 ajihgf0000a
+TEST7 ajihg0edcba
+TEST8 ajihg0edcb0
+TEST9 ajihg0edc00
+TEST10 ajihg0ed0ba
