@@ -1,20 +1,28 @@
 TEST1 #b
--1000
+-0
 TEST2 #b
--999
+-1
 TEST3 #b
--997
+-10
 TEST4 #b
--996
+-5
 TEST5 #b
--994
+-7
 TEST6 #b
--993
+-99
 TEST7 #b
--991
+-0001
 TEST8 #b
--990
+-63
 TEST9 #b
--988
+-64
 TEST10 #b
--987
+-127
+TEST11 #b
+-127
+TEST12 #b
+-200
+TEST13 #b
+-300
+TEST13 #b
+-511
