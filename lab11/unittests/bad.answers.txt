@@ -1,0 +1,8 @@
+TEST1
+TEST2 # a
+TEST3 #b
+TEST4 #.a
+TEST5 #..a
+TEST6 #ba
+TEST7 #$a
+TEST8 #\na
