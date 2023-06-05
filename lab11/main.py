@@ -4,10 +4,6 @@ import sys
 import re
 
 
-def transform(number, length):
-    return int((number * 2) / length)
-
-
 def my_printf(format_string, param):
     matcher = re.search("#b", format_string)
     if not matcher:
